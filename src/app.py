@@ -7,8 +7,8 @@ import cv2
 app = Flask(__name__)
 model = YOLO('yolov8x.pt')  # Using a larger model for better accuracy
 
-UPLOAD_FOLDER = "D:\\Project\\uploads"
-RESULT_FOLDER = 'D:\\Project\\src\\static\\output'
+UPLOAD_FOLDER = "src\\uploads"
+RESULT_FOLDER = 'src\\static\\output'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(RESULT_FOLDER, exist_ok=True)
 
