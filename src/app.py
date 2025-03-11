@@ -37,7 +37,7 @@ def upload():
     else:
         return jsonify({'success': False, 'error': 'Unsupported file type'})
     print(path)
-    filepath = path.replace("D:\\Project\\src\\static\\", "")
+    filepath = path.replace("src\\static\\", "")
     filepath = filepath.replace("\\", "/")
     print(filepath)
 
