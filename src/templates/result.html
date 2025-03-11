@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processed Result</title>
+</head>
+<body>
+    <h2>Processed Output  {{filepath}}</h2>
+    
+    <div id="resultContainer">
+        {% if input_type == "image" %}
+            <img src = "{{ url_for('static', filename = filepath) }}" alt="My Image" >
+        {% elif input_type == "video" %}
+            <video controls width="640">
+                <source src = "{{ url_for('static', filename = filepath) }}" type = "video/mp4" >
+            </video>
+        {% endif %}
+    </div>
+    
+    <br>
+    <a href="/">Upload Another File</a>
+</body>
+</html>
