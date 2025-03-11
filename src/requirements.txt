@@ -1,2 +1,10 @@
 flask
+ultralytics
+opencv-python
+torch
+torchvision
+tqdm
+numpy
+pillow
+matplotlib
 gunicorn
